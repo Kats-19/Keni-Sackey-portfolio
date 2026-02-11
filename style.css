@@ -11,13 +11,18 @@ body{
     background: #7a92d3;
     color: #e7e0e0;
 }
+
+/* ---------------- Header ---------------- */
 #header{
     width: 100%;
     height: 100vh;
+
+    /* ✅ If this path doesn't work, change it to your real path (e.g. "background.png" or "images/background.png") */
     background-image: url(Portfolio/Images/background.png);
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 10px 10%;
     position: relative;
@@ -30,7 +35,9 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo{ 
+/* ✅ Works if you add class="logo" OR if you forget it */
+.logo,
+nav img{
     width: 180px;
 }
 
@@ -59,6 +66,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
 .header-text {
     margin-top: 20%;
     font-size: 30px;
@@ -71,11 +79,13 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#cf6dd3;
 }
-/*------------about---------- */
+
+/* ---------------- About ---------------- */
 #about{
     padding: 80px 0;
-    color: #c6b1ca
+    color: #c6b1ca;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -143,17 +153,21 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-/*------------services--------------*/
-#services{
+
+/* ---------------- What I Build (was Services) ---------------- */
+#what-i-build{
     padding: 30px 0;
 }
-.services-list{
+
+/* ✅ Matches updated HTML class */
+.what-i-build-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.what-i-build-list div{
     background: #9c8c6e;
     padding: 60px;
     font-size: 14px;
@@ -161,30 +175,36 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+
+.what-i-build-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.what-i-build-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
-    text-decoration: none ;
+
+.what-i-build-list div a{
+    text-decoration: none;
     color:#f0b3bd;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+
+.what-i-build-list div:hover{
     background: #bd8b92;
-    transform: translateY(10px)
+    transform: translateY(10px);
 }
-/* --------portfolio-----------------*/
+
+/* ---------------- Portfolio ---------------- */
 #portfolio{
-    padding: 50 0;
+    padding: 50px 0; /* ✅ fixed */
 }
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -242,6 +262,7 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+
 .btn{
     display: block;
     margin: 50px auto;
@@ -251,13 +272,13 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s
+    transition: background 0.5s;
 }
 .btn:hover{
     background: #0D47A1;
 }
 
-/* ----------contact ---------*/
+/* ---------------- Contact ---------------- */
 .contact-left{
     flex-basis: 35%;
 }
@@ -292,6 +313,7 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #1565C0;
 }
+
 .contact-right form{
     width: 100%;
 }
@@ -312,6 +334,7 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -323,13 +346,13 @@ form .btn2{
 .copyright i{
     color: #d681b0;
 }
+
+/* ---------------- Mobile Menu Icons ---------------- */
 #menu-icon, #close-icon {
     display: none;
 }
-/* css for small screens ----- */
-nav .fa{
-    display: none;
-}
+
+/* ---------------- Small screens ---------------- */
 @media only screen and (max-width: 600px){
     #menu-icon, #close-icon {
         display: block;
@@ -348,9 +371,11 @@ nav .fa{
         top: 25px;
         right: 25px;
     }
+
     #header{
-        background-image: url(Portfolio/Images/background.png); /*get one for phone */
+        background-image: url(Portfolio/Images/background.png);
     }
+
     .header-text {
         position: absolute;
         top: 65%;
@@ -360,13 +385,11 @@ nav .fa{
         font-size: 24px;
         width: 100%;
     }
+
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa{
-        display: block;
-        font-size: 25px;
-    }
+
     nav ul{
         background: #ff004f;
         position: fixed;
@@ -378,42 +401,46 @@ nav .fa{
         z-index: 2;
         transition: right 0.5s;
     }
+
     nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fa{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+
     .sub-title{
         font-size: 40px;
-        color: #1E88E5
+        color: #1E88E5;
     }
+
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
+
     .about-col-1{
         flex-basis: 35%;
         margin-bottom: 30px;
     }
+
     .about-col-2{
         flex-basis: 40%;
         font-size: 14px;
+        margin-left: 0; /* ✅ helps on mobile */
     }
+
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
     }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+
     .copyright{
         font-size: 14px;
     }
 }
+
 #msg{
     color: #61b752;
     margin-top: -40px;
