@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Language Learning App — Case Study | Keni Sackey</title>
+
+  <style>
+    :root{
+      --accent:#cf6dd3;
+      --muted:#c7c7d1;
+      --card: rgba(255,255,255,0.06);
+      --text:#f3f4f6;
+      --bg1:#071028;
+      --bg2:#0d1330;
+      --border: rgba(255,255,255,0.10);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 60%);
+      line-height:1.5;
+    }
+
+    a{color:inherit}
+
+    .wrapper{max-width:1100px;margin:40px auto;padding:28px}
+
+    .hero{display:flex;gap:24px;align-items:center}
+    .hero .meta{flex:1}
+
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{margin:0;color:#d8d8df}
+
+    .tags{margin-top:12px}
+    .tag{
+      display:inline-block;
+      background:var(--card);
+      color:#fff;
+      padding:6px 10px;
+      margin-right:8px;
+      margin-bottom:8px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid var(--border);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:24px;
+      margin-top:28px
+    }
+
+    .card{
+      background: var(--card);
+      padding:18px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      backdrop-filter: blur(6px);
+    }
+
+    .section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h2{margin:0;font-size:18px;color:var(--accent)}
+
+    .actions{display:flex;flex-wrap:wrap;gap:10px}
+    .actions a{
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:14px;
+    }
+    .actions a:hover{opacity:.92}
+
+    .notes{color:var(--muted);font-size:14px}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    ul{margin:12px 0 0 18px}
+
+    .embed{
+      height:420px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      overflow:hidden;
+      margin-top:12px;
+      background:#0003;
+    }
+    .embed iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+    }
+
+    .preview-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin-top:12px
+    }
+
+    .thumb{
+      height:140px;
+      border-radius:10px;
+      overflow:hidden;
+      border:1px solid var(--border);
+      background:#0003;
+      position:relative;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      opacity:0.95;
+    }
+    .thumb .label{
+      position:absolute;
+      left:10px;
+      bottom:10px;
+      background: rgba(0,0,0,0.55);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.15);
+    }
+
+    .sidebar-links{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+    .sidebar-links a{
+      text-decoration:none;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+    }
+    .sidebar-links a:hover{background: rgba(255,255,255,0.07)}
+
+    code{background:rgba(255,255,255,0.10);padding:2px 6px;border-radius:6px}
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:stretch}
+      .embed{height:300px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="hero">
+      <div class="meta">
+        <h1>Language Learning App — HCI Class Project</h1>
+        <p class="lead">
+          A user-centered semester project (team of 4) where we researched, prototyped, and tested a language-learning mobile app —
+          from competitor analysis and interviews to interactive wireframes.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Role: UX Research &amp; Design</span>
+          <span class="tag">Tools: Figma · Miro · Google Forms · Google Drive</span>
+          <span class="tag">Class: HCI</span>
+        </div>
+      </div>
+
+      <div style="width:320px;text-align:right">
+        <!-- ✅ Use a relative path so it works online -->
+        <img
+          src="images/thumbnail.png"
+          alt="Project thumbnail"
+          style="width:100%;border-radius:10px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.6)"
+        >
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+
+        <section class="card">
+          <div class="section-title">
+            <h2>Project Overview</h2>
+            <div class="actions">
+              <!-- ✅ Use forward slashes + relative paths -->
+              <a href="files/assignment1-field-research.pdf" target="_blank" rel="noopener">Full Research (PDF)</a>
+              <a href="files/assignment2-interviews.pdf" target="_blank" rel="noopener">Interviews (PDF)</a>
+            </div>
+          </div>
+
+          <p class="notes">
+            Short description: We identified gaps in personalization and conversational practice in popular language apps, conducted interviews
+            across user personas, created a story map and mood board, and built an interactive prototype in Figma.
+          </p>
+
+          <h2 style="margin-top:18px">Process</h2>
+
+          <div class="two-col">
+            <div>
+              <h3 style="color:#fff;font-size:15px;margin-bottom:8px">Research &amp; Analysis</h3>
+              <p class="notes">Field research &amp; competitor analysis highlighted market opportunities and KPIs.</p>
+              <ul>
+                <li>Competitor matrix &amp; market sizing</li>
+                <li>Personas &amp; job stories</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 style="color:#fff;font-size:15px;margin-bottom:8px">User Interviews</h3>
+              <p class="notes">We ran interviews and synthesized pain points: lack of personalization, limited speaking practice, and expensive subscriptions.</p>
+              <ul>
+                <li>5+ interview transcripts</li>
+                <li>Key insights &amp; quotes</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 style="margin-top:18px">Design &amp; Prototype</h2>
+          <p class="notes">Using the insights we created mood boards, story maps, and high-fidelity wireframes. The interactive prototype is embedded below.</p>
+
+          <div class="embed">
+            <iframe
+              src="https://embed.figma.com/design/TiLnZkiOW60b7ugr3jpV0R/Language-app-prototype?node-id=0-1&embed-host=share"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <h2 style="margin-top:18px">Key Outcomes</h2>
+          <ul>
+            <li>Defined MVP features: personalized lessons, speaking practice, note-taking, and progress tracking.</li>
+            <li>Documented positioning and market model (TAM/SAM/SOM).</li>
+            <li>Built a clickable prototype used for feedback and iteration.</li>
+          </ul>
+
+          <h2 style="margin-top:18px">Reflection &amp; Next Steps</h2>
+          <p class="notes">What I'd improve: add text/audio analysis to match users with tutors, implement offline mode, and run usability tests with 10+ participants.</p>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title">
+            <h2>Artifacts &amp; Downloads</h2>
+            <div class="actions">
+              <a href="files/assignment3-mood-story-map.pdf" target="_blank" rel="noopener">Mood board (PDF)</a>
+              <a href="files/assignment4-interaction-design-concept.pdf" target="_blank" rel="noopener">Design concept (PDF)</a>
+            </div>
+          </div>
+
+          <div class="preview-grid">
+            <div class="thumb">
+              <img src="images/competitor-analysis.png" alt="Competitor analysis preview">
+              <div class="label">Competitor Analysis</div>
+            </div>
+            <div class="thumb">
+              <img src="images/interview-snapshot.png" alt="Interview insights preview">
+              <div class="label">Interview Insights</div>
+            </div>
+            <div class="thumb">
+              <img src="images/moodboard.png" alt="Mood board preview">
+              <div class="label">Mood Board</div>
+            </div>
+            <div class="thumb">
+              <img src="images/wireframe.png" alt="Wireframe preview">
+              <div class="label">Wireframes</div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Project Details</h2>
+          <p class="notes">
+            <strong>Team:</strong> 4 members<br>
+            <strong>Duration:</strong> Semester project<br>
+            <strong>My role:</strong> Research &amp; Design<br>
+            <strong>Tools:</strong> Figma, Miro, Google Drive, Notion
+          </p>
+
+          <h2 style="margin-top:12px">Quick Links</h2>
+          <div class="sidebar-links">
+            <a href="files/assignment1-field-research.pdf" target="_blank" rel="noopener">Field Research (PDF)</a>
+            <a href="files/assignment2-interviews.pdf" target="_blank" rel="noopener">Interviews (PDF)</a>
+            <a href="files/assignment3-mood-story-map.pdf" target="_blank" rel="noopener">Mood &amp; Story Map (PDF)</a>
+            <a href="files/assignment4-interaction-design-concept.pdf" target="_blank" rel="noopener">Interaction Concept (PDF)</a>
+            <a href="files/assignment5-interactive-wireframe.pdf" target="_blank" rel="noopener">Wireframe (PDF)</a>
+            <a href="https://www.figma.com/design/TiLnZkiOW60b7ugr3jpV0R/Language-app-prototype" target="_blank" rel="noopener">Open prototype in Figma</a>
+          </div>
+
+          <h2 style="margin-top:12px">Add to portfolio</h2>
+          <p class="notes">
+            Save this as <code>language-learning-case-study.html</code> in your portfolio folder. Put images in <code>/images</code> and PDFs in <code>/files</code>.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</body>
+</html>
