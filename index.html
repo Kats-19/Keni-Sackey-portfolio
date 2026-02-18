@@ -1,288 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio - Keni Sackey</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-a...Z"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Keni Sackey</title>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-a...Z" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <div id="header">
+<div id="header">
     <div class="container">
-      <nav>
-        <img src="logo.png" alt="Keni Sackey logo" />
-
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#what-i-build">What I build</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <i class="fa-solid fa-bars" onclick="openmenu()" id="menu-icon" aria-label="Open menu"></i>
-        <i class="fa-solid fa-x" onclick="closemenu()" id="close-icon" aria-label="Close menu"></i>
-      </nav>
-
-      <div class="header-text">
-        <p>Computer Science Student (Data Science minor)</p>
-        <h1>Hi, I am <span>Keni</span><br />Sackey</h1>
-      </div>
+        <nav>
+            <img src="Images/logo.png">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()" id="menu-icon"></i>
+            <i class="fa-solid fa-x" onclick="closemenu()" id="close-icon"></i>
+        </nav>
+        <div class="header-text">
+            <P align="right"></P>
+            <p>Computer/Data Science Student</p>
+            <h1>Hi, I am <span>Keni</span><br>Sackey From Ghana</h1>
+        </div>
     </div>
-  </div>
-
-  <!---------- about ----------->
-  <div id="about">
+</div>
+<!----------about----------->
+<div id="about">
     <div class="con">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="about me.png" alt="Photo of Keni" />
-        </div>
-
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>
-            Hi, I’m Keni Sackey — a Computer Science student with a minor in Data Science, passionate about building thoughtful software and
-            turning data into insight-driven decisions. I enjoy working on software and data projects, often leading them from start to finish.
-            I’m comfortable with Python, C++, and C, and I also use tools like Jupyter Notebook, Excel, and Figma for analysis, prototyping, and planning.
-            I’m drawn to roles that blend technical problem-solving with collaboration and leadership (e.g., data analytics, IT, or project coordination).
-          </p>
-
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Python, C++, C</span></li>
-              <li><span>SQL, Pandas, Jupyter</span></li>
-              <li><span>Git/GitHub, Linux basics</span></li>
-              <li><span>Figma, Excel, basic web (HTML/CSS/JS)</span></li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>June 2025</span><br />Climate change tweet analysis</li>
-              <li><span>Sep 2024 - Dec 2024</span><br />Language learning app (HCI project)</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Sep 2023 - Current</span><br />BSc. Computer Science — Constructor University</li>
-              <li><span>Sep 2017 - May 2023</span><br />High school diploma — Enlightium Academy</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me!</h1>
+                <p>
+                Hi, I’m Keni Sackey — a Computer Science student with a minor in Data Science, passionate about building thoughtful software and 
+                turning data into insight-driven decisions. I enjoy working on software and data science projects, many of which I’ve led from 
+                start to finish. I’m comfortable with Python, C++, and C, and I often work with tools like Jupyter Notebook, Excel, and Figma for 
+                data analysis, prototyping, and planning. I also share tech, productivity, and student life content on my YouTube channel and blog — 
+                combining creativity with technical knowledge. I’m highly organized and love planning out both my projects and daily life. 
+                Having led three team-based projects so far, I’m drawn to roles that blend technical problem-solving with collaboration and 
+                leadership, such as data analysis or project management in tech. Outside of tech, I enjoy playing tennis and dabble in piano — 
+                always striving to stay curious and well-rounded.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data analysis</span></li>
+                        <li><span>Web development</span></li>
+                        <li><span>Project management</span></li>
+                        <li><span>Human Computer interaction</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2025</span><br>Climate change tweet analysis</li>
+                        <li><span>Sep 2024 - Dec 2024</span><br>Language learning app(HCI project)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sep 2023 - Current</span><br>BSc. Computer Science from Constructor University</li>
+                        <li><span>Sep 2017 - May 2023</span><br>High school diploma(Enlightium Academy)</li>
+                    </ul>
+            </div>
+            </div>
     </div>
-  </div>
-
-  <!---------- what i build ----------->
-  <div id="what-i-build">
+</div>
+</div>
+<!----------services----------- -->
+<div id="services">
     <div class="container">
-      <h1 class="sub-title">What I build</h1>
-
-      <div class="what-i-build-list">
-        <div>
-          <i class="fa-solid fa-chart-line"></i>
-          <h2>Data & Analytics</h2>
-          <p>
-            Data cleaning, exploratory analysis, simple modeling, and dashboards that turn data into insights.
-          </p>
-          <a href="#portfolio">See projects</a>
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data analysis</h2>
+                <p>inspecting, cleansing, transforming, and modeling data with the goal of 
+                discovering useful information, informing conclusions, and supporting decision-making.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Project management</h2>
+                <p> leading and coordinating teams to achieve specific goals within 
+                    defined constraints like time, scope, and budget</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Web development</h2>
+                <p> creating, building, and maintaining websites and web applications</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>Human Computer Interaction</h2>
+                <p>how people interact with computer technology and the design of user-friendly interfaces</p>
+                <a href="#">Learn more</a>
+            </div>
         </div>
-
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Software Projects</h2>
-          <p>
-            Practical apps and tools built with clean structure, readable code, and clear documentation.
-          </p>
-          <a href="#portfolio">See projects</a>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-laptop"></i>
-          <h2>Web Development</h2>
-          <p>
-            Simple, clean websites and web apps — focused on usability and clarity.
-          </p>
-          <a href="#portfolio">See projects</a>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          <h2>UX / HCI Work</h2>
-          <p>
-            User research, wireframes, prototypes, and design thinking for better experiences.
-          </p>
-          <a href="language-learning-case-study.html" target="_blank" rel="noopener noreferrer">View case study</a>
-        </div>
-      </div>
     </div>
-  </div>
-
-  <!-- ------------- portfolio ---------------- -->
-  <div id="portfolio">
+</div>
+<!-- -------------portfolio---------------- -->
+<div id="portfolio">
     <div class="container">
-      <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Work</h1>
 
-      <div class="work-list">
-        <div class="work">
-          <img src="language.png" alt="Language Learning App project" />
-          <div class="layer">
-            <h3>Language Learning App (HCI)</h3>
-            <p>Semester project: research + interviews + story map + interactive prototype (Figma).</p>
-            <a href="language-learning-case-study.html" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="Images/language.png">
+                <div class="layer">
+                    <h3>Language Learning App</h3>
+                    <p>Initial UX research and interactive prototype for a language-learning application.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/climateproject.png">
+                <div class="layer">
+                    <h3>Climate Change Tweet Analysis</h3>
+                    <p>Sentiment analysis and regression modeling to evaluate public opinion trends.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/study app.png">
+                <div class="layer">
+                    <h3>Study App</h3>
+                    <p>Web application designed to help students organize study sessions.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- NEW DASHBOARD PROJECT -->
+            <div class="work">
+                <img src="Images/it-service-desk.png" alt="IT Service Desk Analytics Dashboard">
+                <div class="layer">
+                    <h3>IT Service Desk Analytics Dashboard</h3>
+                    <p>Streamlit dashboard tracking ticket KPIs, SLA compliance, backlog age, and operational bottlenecks with actionable recommendations.</p>
+
+                    <!-- Live demo -->
+                    <a href="https://it-service-desk-analytics.streamlit.app/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="Live Demo">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Kats-19/it-service-desk-analytics" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="work">
-          <img src="climateproject.png" alt="Climate tweet analysis project" />
-          <div class="layer">
-            <h3>Climate Change Tweet Analysis</h3>
-            <p>Sentiment analysis + simple regression models to evaluate patterns and trends.</p>
-            <a
-              href="https://github.com/Kats-19/climate-change-tweet-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
+        <a href="#" class="btn">See more</a>
 
-        <div class="work">
-          <img src="study app.png" alt="Finance tracker project" />
-          <div class="layer">
-            <h3>Finance Tracker</h3>
-            <p>A simple finance tracker app (built + documented on GitHub).</p>
-            <a
-              href="https://github.com/Kats-19/girly-finance-tracker"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <a href="https://github.com/Kats-19" target="_blank" rel="noopener noreferrer" class="btn">View all on GitHub</a>
     </div>
-  </div>
-
-  <!---------- contact ----------->
-  <div id="contact">
+</div>
+<!----------contact----------- -->
+<div id="contact">
     <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i> kenisackey@gmail.com</p>
-
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/keni-sackey-9792141b0/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/kenisackey/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.pinterest.com/Kenious16/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-pinterest-p"></i>
-            </a>
-          </div>
-
-          <a href="Keni_Sackey_CV (3).pdf" download class="btn btn2">Download CV</a>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kenisackey@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01783376460</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/keni-sackey-9792141b0/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/kenisackey/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/Kenious16/"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <a href="Keni Sackey - CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name:" required>
+                    <input type="text" name="Email" placeholder="Your Email:" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
         </div>
-
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
-      </div>
     </div>
-
     <div class="copyright">
-      <p>Copyright © Keni. Made with <i class="fa-solid fa-heart"></i></p>
+        <p>Copyright © Keni. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
     </div>
-  </div>
+</div>
 
-  <script>
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
     }
-  </script>
+</script>
 
-  <script>
+<script>
     var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-      sidemenu.style.right = "0";
+    function openmenu(){
+        sidemenu.style.right = "0";
     }
-
-    function closemenu() {
-      sidemenu.style.right = "-200px";
+    function closemenu(){
+        sidemenu.style.right = "-200px";
     }
-  </script>
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSziW37kmJz-VVgspUh4k8DFNq8SW_JcE_BuLfChvg8Nvi6Bu_kIJ1qKl-IN-MOGkk/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwSziW37kmJz-VVgspUh4k8DFNq8SW_JcE_BuLfChvg8Nvi6Bu_kIJ1qKl-IN-MOGkk/exec";
-    const form = document.forms["submit-to-google-sheet"];
-    const msg = document.getElementById("msg");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
-          msg.innerHTML = "Message sent successfully";
-          setTimeout(function () {
-            msg.innerHTML = "";
-          }, 5000);
-          form.reset();
-        })
-        .catch((error) => console.error("Error!", error.message));
-    });
-  </script>
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
